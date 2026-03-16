@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // User-owned data
+    match /users/{userId} {
+      allow read, write: if isSignedIn() && request.auth.uid == userId;
+
+      match /wishlist/{itemId} {
+        allow read, write: if isSignedIn() && request.auth.uid == userId;
+      }
+
+      match /wardrobe/{itemId} {
+        allow read, write: if isSignedIn() && request.auth.uid == userId;
+      }
+
+      match /notifications/{notificationId} {
+        allow read: if isSignedIn() && request.auth.uid == userId;
+        allow write: if false; // backend-only writes via admin SDK
+      }
+    }
+
+    // Public read for inventory and storefront browsing
+    match /stores/{storeId} {
+      allow read: if true;
+      allow write: if isSignedIn();
+
+      match /inventory/{itemId} {
+        allow read: if true;
+        allow write: if isSignedIn();
+      }
+    }
+  }
+}

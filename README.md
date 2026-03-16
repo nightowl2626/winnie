@@ -1,4 +1,4 @@
-# Winnie
+# Winnie - Your Wardrobe OS
 
 Winnie is a multimodal fashion agent built for hackathon speed: a wardrobe scanner, stylist, wishlist memory, and shop scout wrapped into one fashion experience.
 
@@ -107,6 +107,16 @@ flowchart LR
   G --> H
   G --> I
 ```
+
+## Diagrams
+
+### System Architecture
+
+![Winnie system architecture](./winnie_system_architecture.svg)
+
+### Agent Logic
+
+![Winnie agent logic diagram](./agent_logic_diagram.svg)
 
 ## Useful Docs
 
