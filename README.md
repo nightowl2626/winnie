@@ -1,6 +1,6 @@
 # Winnie - Your Wardrobe OS
 
-Winnie is a multimodal fashion agent built for hackathon speed: a wardrobe scanner, stylist, wishlist memory, and shop scout wrapped into one fashion experience.
+Winnie is a multimodal fashion agent built for the [Gemini Live AI Challenge](https://geminiliveagentchallenge.devpost.com/?_gl=1*1bb9o5q*_gcl_au*NDU1ODYyNDExLjE3NjY1MzIwMjU.*_ga*MTY5MTA0NzE3LjE3NTc2MTM5MjY.*_ga_0YHJK3Y10M*czE3NzM3MDExNDkkbzgwJGcxJHQxNzczNzAxOTg5JGo0MiRsMCRoMA..): a wardrobe scanner, stylist, wishlist memory, and shop scout wrapped into one fashion experience.
 
 It is designed around live interaction:
 - talk to the agent naturally
@@ -128,3 +128,5 @@ flowchart LR
 Because it is not just “chat with a fashion bot.”
 
 Winnie sees garments, remembers your closet, tracks what you actually wear, saves what you are missing, and helps you make decisions while shopping in the real world.
+
+Read more about the motivation and story behind Winnie [here](https://devpost.com/software/winnie-your-wardrobe-os).
