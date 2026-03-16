@@ -1,0 +1,34 @@
+{
+  "name": "secondhand-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^15.1.1",
+    "@google/genai": "^1.30.0",
+    "babel-preset-expo": "~54.0.10",
+    "expo": "^54.0.33",
+    "expo-asset": "~12.0.12",
+    "expo-camera": "~17.0.10",
+    "expo-location": "~19.0.8",
+    "expo-notifications": "~0.32.16",
+    "fbjs": "^3.0.5",
+    "firebase": "^12.6.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-map-clustering": "^4.0.0",
+    "react-native-maps": "1.20.1",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
+  }
+}

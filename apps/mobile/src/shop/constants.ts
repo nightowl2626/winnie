@@ -1,0 +1,2 @@
+export const SHOP_FRAME_STREAM_INTERVAL_MS = 1400;
+export const MAX_SHOP_MAP_MARKERS = 40;
